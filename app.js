@@ -27,7 +27,7 @@ const start = async () => {
   try {
     await connectDB();
 
-    // await buildAdminJS(app);
+    await buildAdminJS(app);
 
     app.listen({ port: PORT, host: "0.0.0.0" }, (err, addr) => {
       if (err) {
